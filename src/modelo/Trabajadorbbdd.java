@@ -4,8 +4,9 @@ import javax.persistence.*;
 import java.sql.Date;
 import java.util.Objects;
 
+
 @Entity
-@Table(name = "trabajadorbbdd", schema = "bjklpbumfnubxc82xsel", catalog = "")
+@Table(name = "trabajadorbbdd", schema = "bjklpbumfnubxc82xsel")
 public class Trabajadorbbdd {
     private Long id;
     private int idTrabajador;
@@ -17,6 +18,7 @@ public class Trabajadorbbdd {
     private Date fechaAlta;
     private String codigoCuenta;
     private String iban;
+
 
     @Id
     @GeneratedValue
@@ -130,4 +132,6 @@ public class Trabajadorbbdd {
     public int hashCode() {
         return Objects.hash(idTrabajador, nombre, apellido1, apellido2, nifnie, email, fechaAlta, codigoCuenta, iban);
     }
+
+
 }

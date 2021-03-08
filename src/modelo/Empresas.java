@@ -3,13 +3,15 @@ package modelo;
 import javax.persistence.*;
 import java.util.Objects;
 
+
 @Entity
-@Table(name = "empresas", schema = "bjklpbumfnubxc82xsel", catalog = "")
+@Table(name = "empresas", schema = "bjklpbumfnubxc82xsel")
 public class Empresas {
     private Long id;
     private int idEmpresa;
     private String nombre;
     private String cif;
+
 
     @Id
     @GeneratedValue
@@ -63,4 +65,6 @@ public class Empresas {
     public int hashCode() {
         return Objects.hash(idEmpresa, nombre, cif);
     }
+
+
 }

@@ -3,14 +3,16 @@ package modelo;
 import javax.persistence.*;
 import java.util.Objects;
 
+
 @Entity
-@Table(name = "categorias", schema = "bjklpbumfnubxc82xsel", catalog = "")
+@Table(name = "categorias", schema = "bjklpbumfnubxc82xsel")
 public class Categorias {
     private Long id;
     private int idCategoria;
     private String nombreCategoria;
     private double salarioBaseCategoria;
     private double complementoCategoria;
+
 
     @Id
     @GeneratedValue
@@ -74,4 +76,6 @@ public class Categorias {
     public int hashCode() {
         return Objects.hash(idCategoria, nombreCategoria, salarioBaseCategoria, complementoCategoria);
     }
+
+
 }

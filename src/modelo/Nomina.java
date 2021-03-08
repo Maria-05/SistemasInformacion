@@ -3,8 +3,9 @@ package modelo;
 import javax.persistence.*;
 import java.util.Objects;
 
+
 @Entity
-@Table(name = "nomina", schema = "bjklpbumfnubxc82xsel", catalog = "")
+@Table(name = "nomina", schema = "bjklpbumfnubxc82xsel")
 public class Nomina {
     private Long id;
     private int idNomina;
@@ -38,6 +39,7 @@ public class Nomina {
     private Double brutoNomina;
     private Double liquidoNomina;
     private Double costeTotalEmpresario;
+
 
     @Id
     @GeneratedValue
